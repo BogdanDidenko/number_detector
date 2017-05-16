@@ -1,0 +1,41 @@
+.pixel_canvas{
+    border: 6px;
+    box-shadow: 10px 10px 40px #333;
+    cursor: crosshair;
+    position: relative;
+}
+
+.clear_button{
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: #000000;
+    background-color: rgba(103, 58, 183, 0.33);
+}
+
+.pixel_table{
+    border: 0px;
+}
+
+.pixel_row{
+    border: 0px;
+}
+
+.pixel_col{
+    width: 4px;
+    height: 4px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00bcd4;
+}
+
+.pixel_col.active {
+    background-color: #9C27B0;
+}
