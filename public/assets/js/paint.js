@@ -1,4 +1,4 @@
-(function(glob) {
+window.Global = window.Global || {};
     $(function(){
         var main = $('.article_paintblock'),
             canvas = $('<div class="pixel_canvas"></div>'),
@@ -42,11 +42,11 @@
             $('.pixel_col').removeClass('active');
         });
 
-        glob.getPaintedCalls = function() {
+        Global.getPaintedCalls = function() {
             var res = [];
-            $('.pixel_col').each((el)=>{
-                res.push( new Number(el.hasClass('active')).valueOf() );
+            $('.pixel_col').each((i, el)=>{
+                res.push( new Number(5 * $(el).hasClass('active')).valueOf() );
             });
+            return res;
         }
     });
-})(Global || {});
