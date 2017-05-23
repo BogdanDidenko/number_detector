@@ -1,6 +1,6 @@
 $(function(){
     var dissable = false;
-    var text = 'Взможно вы имели ввиду ';
+    var text = 'Возможно вы имели ввиду ';
     $('#send').on('click', function() {
         if(dissable) return;
         var imageVectorize = Global.getPaintedCalls();
