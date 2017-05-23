@@ -1,0 +1,20 @@
+{
+  "name": "number_detector",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku create --buildpack https://github.com/orchardmile/heroku-buildpack-numpy-scipy.git"
+    }
+  ]
+}
