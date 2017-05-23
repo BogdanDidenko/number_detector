@@ -12,5 +12,6 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "numjs": "^0.13.1"
-  }
+  },
+  "start": "node index.js"
 }
