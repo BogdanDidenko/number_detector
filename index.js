@@ -16,15 +16,14 @@ app.use(bodyParser.json());
 
 function proccessData(data, res) {
     const exec = require('child_process').exec;
-    exec('python neural.py ' + JSON.stringify({'\"data\"': data}), (err, stdout, stderr) => {
+    exec('python predicter.py ' + JSON.stringify({'\"data\"': data}), (err, stdout, stderr) => {
         if (err) {
             console.error(err);
             return;
         }
-
+        console.log(stdout)
         var resArray = JSON.parse(stdout)[0];
         var result = resArray.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
-
         res.json({number: result, array: resArray});
     });
     // var layer;

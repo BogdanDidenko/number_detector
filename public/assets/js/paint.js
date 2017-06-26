@@ -43,9 +43,9 @@ window.Global = window.Global || {};
                 var i = $(e.target).data('num');
                 //debugger;
                 //console.log($(table).find("[data-num=" + (i - 28 + "]"));
-                $(table).find("[data-num=" + (i - 28) + "]").addClass('active');
+                //$(table).find("[data-num=" + (i - 28) + "]").addClass('active');
                 $(table).find("[data-num=" + (i - 1) + "]").addClass('active');
-                $(table).find("[data-num=" + (i + 1) + "]").addClass('active');
+                //$(table).find("[data-num=" + (i + 1) + "]").addClass('active');
                 $(table).find("[data-num=" + (i + 28) + "]").addClass('active');
             }
         });
